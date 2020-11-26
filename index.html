@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta 
+        name="viewport" 
+        content="width=device-width, initial-scale=1.0" 
+    />
+    <title>Linda Perica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="header__overlay">
+            <div class="header__wrapper">
+                <h1 class="header__heading">I´m Linda</h1>
+                <h3 class ="header__sub-heading">Front-End Web Developer <br> and Agile specialist</h3>    
+            </div>
+            <div class="image__wrapper">
+                <img class="header__image" src= "./img/logos.png" alt="HTML CSS JS logos">
+                <img class="header__image" src= "./img/blackbelt.png" alt="Lean six sigma blackbelt logos">
+            </div>
+        </div>
+        <ul class="navbar">
+            <!-- List items are created dynamically thru JS, new section must have an ID.  -->
+        </ul>
+    </div>
+    <div id="about" class="section section__first active--off">
+        <h2 class="section__heading">
+            Who am <b>I</b> ?
+        </h2>
+        <p class="section__text">
+            I´ve spent 6+ years working in different roles as an Agile Specialist, and is a certified Lean Six Sigma Black Belt. Even though I also know my fair share of martial arts, Black Belts are experts in Lean Six Sigma methodologies and dedicate their time to implementing company improvements and leading key projects. 
+            These days my time is spent studying and coding to achieve my goal to become a front-end developer. I started my learning path with a deep dive into JavaScript and later complemented this with the library React. 
+            Out of office you will find me dreaming of turning my home into a green oasis or talking the family out for a forest barbeque.
+        </p>
+        <button class="button button--big" onclick="window.location.href='./html/contact.html';">Interested in working together? Let´s have a talk.</button>
+        <button class="button button--small" onclick="window.location.href='./html/contact.html';">Let´s talk!</button>     
+    </div>
+    <div id="skills" class="section section__second">
+        <h2 class="section__heading">Technical Skills</h2>
+        <p class="section__text">
+            I am a junior eager to learn front-end developer and my language of choice is JavaScript. In addition to technical courses I like to read relevant subject matter books, last month I finished The Pragmatic Programmer, by Hunt & Thomas, currently in my Kindle is Code: The Hidden Language of Computer Hardware and Software, by Petzold.  
+        </p>
+            <ul class="features__items">
+                <li class="features__item">
+                    <i class="far fa-check-circle icon--larger"></i>
+                    <h3>JavaScript</h3>
+                </li>
+                <li class="features__item">
+                    <i class="far fa-check-circle icon--larger"></i>
+                    <h3>HTML <br>& CSS</h3>
+                </li>
+                <li class="features__item">
+                    <i class="far fa-check-circle icon--larger"></i>
+                    <h3>React</h3>
+                </li>
+            </ul>
+    </div>
+    <div id="projects" class="section section__third">
+        <h2 class="section__heading">Selected Projects</h2>
+        <div class="project__images">
+        </div>
+        <div class="card__wrapper">
+            <article class="card">
+                <div class="card__page card__page--first card__first-project">
+                </div>
+                <div class="card__page card__page--second">
+                    <h4>#React</h4>
+                    <p>A project practicing the fundamentals of React, e.g. components state, props, stateless functional components and lifecycle methods. </p>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__page card__page--first card__second-project">
+                </div>
+                <div class="card__page card__page--second">
+                    <h4>#HTML #CSS</h4>
+                    <p>Responsive, multi-device, blog website with layout built in CSS Grids and Flexbox, including custom images, layout, and styling.</p>
+                </div>
+            </article>
+        </div> 
+    </div>
+    <div id="agile" class="section section__fourth">
+        <h2 class="section__heading">Agile Ninja!</h2>
+        <p class="section__text section__text--spaced">
+            I am certified in both Lean six Sigma and scrum methodology. I have found that Scrum and Lean six Sigma can be used simultaneously and be integrated in a very useful way. Scrum has provided me with a very useful process to conduct projects in an efficient way while Lean Six sigma has provided me with a set of strong and useful tools for solving problems. Both methods with the heart in continuous improvements. 
+        </p>
+        <p class="section__text">
+            What makes my heart tick for agile work is that both Lean Six sigma and Scrum give those who work within the organization empowerment and autonomy. Working in a self-organizing team with a sense of goal and purpose finding new ways to excel and deliver value gives me great joy!
+        </p>
+        <div class="agile__logos">
+            <img class="agile__logo" src= "./img/blackbelt.png" alt="blackbelt certification">
+            <img class="agile__logo" src= "./img/agile__scrumorg.svg" alt="scrum certification">    
+        </div>
+    </div>
+    <div class="footer">
+        <h2 class="footer__subheading">
+            Connect with me!
+        </h2>
+        <div class="footer__social">
+            <a href="https://www.linkedin.com/in/linda-perica/"><i class="footer__social-icon fab fa-linkedin"></i></a>
+            <a href="https://github.com/LiMaPe"><i class="footer__social-icon fab fa-github-square"></i></a>
+        </div>
+        <p class="footer__copyright">
+            <i class="fas fa-copyright"></i>
+            Copyright Linda Perica. This is a project website, made as part of Udacity Front End Web Developer program.
+        </p>
+    </div>
+</div>
+</body>
+<script src="./js/app.js"></script>
+</html>
