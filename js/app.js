@@ -82,14 +82,11 @@ window.addEventListener("scroll", function(){
 
 //Makes the navbar stick to the top of the page
 
-// When the user scrolls the page, execute stickToTop
+// adds a on-scroll eventlistener with a function to execute when user scrolls. 
 window.onscroll = function() {stickToTop()};
 const navBar = document.getElementsByClassName("navbar")[0];
-
-// Get the offset position of the navbar
 const stickPos = navBar.offsetTop;
 
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function stickToTop() {
   if (window.pageYOffset > stickPos) {
     navBar.classList.add("navbar--stick");
