@@ -103,7 +103,9 @@ We now have the active section!
 -	When a section is active, the corresponding navbar-item will also have an active styling. Here a green background will appear for the active section. It is done in a similar matter as for the active section styling. 
 
 **Challenge 3. Scroll to anchor links**
--	“The scroll-behavior CSS property sets the behavior for a scrolling box when scrolling is triggered by the navigation or CSSOM scrolling APIs.” (MDN definition)
+- Requirement: Implement a smooth scroll using the native JS methods.
+- I added an on click eventlistener to each li element in the navbar. When the event is fired, the function prevents the event default behaviour. It then accesses the event target thru the event object. It selects the target element and then uses the scrollIntoView() method on this element with the smooth scroll setting, making the page scroll to the target element (section). 
+-	An alternativ solution thru CSS is a great option if you do not wish to add the functionality thru JS. “The scroll-behavior CSS property sets the behavior for a scrolling box when scrolling is triggered by the navigation or CSSOM scrolling APIs.” (MDN definition)
 The default value makes a jump to the section in the link. To make a nice scrolling effect I set the property to: scroll-behavior: smooth;
 
 **Challenge 4. Bonus: Sticky navbar**
