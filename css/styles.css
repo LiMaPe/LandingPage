@@ -337,12 +337,6 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgba(91, 170, 174, 0.7)
 }
 
-/* scrolling to anchor links for the whole page */
-
-html {
-	scroll-behavior: smooth;
-}
-
 @media only screen and (max-width: 412px) {
     .button--big {
         display: none;

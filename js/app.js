@@ -93,4 +93,26 @@ function stickToTop() {
   } else {
     navBar.classList.remove("navbar--stick");
   }
-}
+};
+
+// Scrolling replaces the default jump to section on click. 
+let navbarLis = document.querySelectorAll(".navbar__item");
+navbarLis = Array.from(navbarLis); 
+
+//Adds an on click eventlistener to each navbar link element 
+navbarLis.forEach(element => {
+    element.addEventListener("click", myScrollFunction);
+});
+
+//The myScrollFunction prevents default jump and sets scroll behaviour to smooth. 
+function myScrollFunction(e) {
+    e.preventDefault();
+    const targetScroll = e.target.hash;
+    const scrollTo = document.querySelector(targetScroll);
+    scrollTo.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+};
+
+
+
+
+
